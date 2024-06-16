@@ -1,4 +1,5 @@
-class ParkingLot:
+from ParkingLotModels.BaseModel import BaseModel
+class ParkingLot(BaseModel):
     def __init__(self):
         self.__parkingFloors = []
         self.__gates = []
@@ -6,13 +7,18 @@ class ParkingLot:
 
     def getParkingFloors(self):
         return self.__parkingFloors
+
     def setParkingFloors(self, value):
         self.__parkingFloors = value
+
     def getGates(self):
         return self.__gates
-    def setGates(self,value):
+
+    def setGates(self, value):
         self.__gates = value
+
     def getCapacity(self):
         return self.__capacity
-    def setCapacity(self,value):
+
+    def setCapacity(self, value):
         self.__capacity = value
